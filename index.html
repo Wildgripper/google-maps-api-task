@@ -10,26 +10,32 @@
 
 <body>
     <div class="container">
-        <form id="contact" action="" method="post">
+        <form id="contact" action="" method="post" novalidate>
             <h3>Contact form</h3>
             <h4>Contact us today, and get quick reply!</h4>
             <fieldset>
-                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                <input type="text" name="name" placeholder="Your name" title="Please fill your name" required autofocus
+                    tabindex="1">
             </fieldset>
             <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                <input type="email" name="email" placeholder="Your Email Address" title="Please fill your email address"
+                    required tabindex="2">
             </fieldset>
             <fieldset>
-                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" title="Please fill your phone number"
+                    required tabindex="3">
             </fieldset>
             <fieldset>
-                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+                <input type="url" name="url" placeholder="Your Web Site" title="Please fill your web site" required
+                    tabindex="4">
             </fieldset>
             <fieldset>
-                <input placeholder="Your Address" type="url" tabindex="4" required>
+                <input type="text" name="address" placeholder="Your Address" title="Please fill your address" required
+                    tabindex="5">
             </fieldset>
             <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                <button type="submit" id="contact-submit" name="submit" data-submit="...Sending"
+                    tabindex="6">Submit</button>
             </fieldset>
         </form>
 
