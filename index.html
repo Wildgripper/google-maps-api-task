@@ -11,8 +11,10 @@
 <body>
     <div class="container">
         <form id="contact" method="post" novalidate>
-            <h3>Contact form</h3>
-            <h4>Contact us today, and get quick reply!</h4>
+            <h2>Contact form</h2>
+            <h3>Contact us today, and get quick reply!</h3>
+            <h4>Please fill in the form below</h4>
+            <h4 class="required">All fields are required</h4>
             <fieldset>
                 <input type="text" id="name" placeholder="Your name" title="Please fill your name" required autofocus
                     tabindex="1">
@@ -20,6 +22,8 @@
             <fieldset>
                 <input type="email" id="email" placeholder="Your Email Address" title="Please fill your email address"
                     required tabindex="2">
+                <span class="error" aria-live="polite"></span>
+
             </fieldset>
             <fieldset>
                 <input type="tel" id="tel" placeholder="Your Phone Number" title="Please fill your phone number"
@@ -34,8 +38,13 @@
                     tabindex="5">
             </fieldset>
             <fieldset>
-                <button type="button" id="contact-submit" onclick="storeForm()" tabindex="6">Submit</button>
+                <button type="submit" id="contact-submit" tabindex="6">Submit</button>
             </fieldset>
+
+            <div id="success">
+                <h1>Thank you!</h1>
+                <h3>Your submission has been sent.</h3>
+            </div>
         </form>
     </div>
 
